@@ -1,0 +1,31 @@
+/******************************************************************************
+
+15/02/23 Douglas - Exercício 04 da lista 01 
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    
+int quantidade_maca;
+    float preco_unitario, preco_total;
+
+    // Leitura da quantidade de maçãs
+    printf("Digite a quantidade de maçãs compradas: ");
+    scanf("%d", &quantidade_maca);
+
+    // Cálculo do preço unitário e do preço total
+    if (quantidade_maca < 12) {
+        preco_unitario = 1.30;
+    } else {
+        preco_unitario = 1.00;
+    }
+    preco_total = quantidade_maca * preco_unitario;
+
+    // Exibição do resultado
+    printf("O custo total da compra é: R$ %.2f\n", preco_total);
+
+    return 0;
+}
