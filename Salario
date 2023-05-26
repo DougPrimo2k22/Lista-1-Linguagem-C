@@ -1,0 +1,26 @@
+/******************************************************************************
+
+01/03/23 Douglas - Lista 1 - Exercicio 5
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main() {
+    float salario_ vendas, comissao, total;
+    printf("Digite o salário fixo: R$ ");
+    scanf("%f", &salario;
+    printf("Digite o valor das vendas efetuadas: R$ ");
+    scanf("%f", &vendas);
+    if (vendas <= 1500) {
+        comissao = vendas * 0.03;
+    } else {
+        comissao = 1500 * 0.03 + (vendas - 1500) * 0.05;
+    }
+
+    total = salario + comissao;
+
+    printf("O salário total do vendedor é: R$ %.2f\n", total);
+
+    return 0;
+}
