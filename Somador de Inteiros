@@ -1,0 +1,35 @@
+/******************************************************************************
+
+01/03/23 Douglas - Lista 1 - Exercicio 8
+
+*******************************************************************************/
+
+
+#include <stdio.h>
+
+int main() {
+    int valor1, valor2;
+    int soma = 0;
+
+    printf("Digite o primeiro valor: ");
+    scanf("%d", &valor1);
+
+    printf("Digite o segundo valor: ");
+    scanf("%d", &valor2);
+
+    // Troca os valores se o segundo valor for menor que o primeiro
+    if (valor2 < valor1) {
+        int temp = valor1;
+        valor1 = valor2;
+        valor2 = temp;
+    }
+
+    // Calcula a soma dos inteiros entre os dois valores
+    for (int i = valor1; i <= valor2; i++) {
+        soma += i;
+    }
+
+    printf("A soma dos inteiros entre %d e %d (inclusive) é: %d\n", valor1, valor2, soma);
+
+    return 0;
+}
