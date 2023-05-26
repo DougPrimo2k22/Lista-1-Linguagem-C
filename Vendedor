@@ -1,0 +1,32 @@
+/******************************************************************************
+
+15/02/2023 Douglas - Lista 1 Exercicio 2
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int quantidade;
+    float venda, salarioFixo, comissao, salarioFinal;
+
+    // Entrada
+    printf ("Digite a quantidade de carros: ");
+    scanf ("%d",&quantidade);
+    
+    printf ("Digite o total das vendas: ");
+    scanf ("%f",&venda );
+    
+    printf ("Digite o salario fixo: ");
+    scanf ("%f",&salarioFixo );
+    
+    printf ("Digite a comissão por carro: ");
+    scanf ("%f",&comissao );
+    
+
+    salarioFinal = salarioFixo + quantidade*comissao + 0.05 * venda;
+    
+    // Saída
+    printf ("Salario final= %.2f", salarioFinal);
+    return 0;
+}
