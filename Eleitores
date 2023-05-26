@@ -1,0 +1,35 @@
+/******************************************************************************
+
+01/03/23 Douglas - Lista 1 - Exercicio 2
+
+*******************************************************************************/
+
+
+#include <stdio.h>
+
+int main() {
+    int total_eleitores, votos_brancos, votos_nulos, votos_validos;
+    float percentual_brancos, percentual_nulos, percentual_validos;
+
+    printf("Digite o número total de eleitores: ");
+    scanf("%d", &total_eleitores);
+
+    printf("Digite o número de votos brancos: ");
+    scanf("%d", &votos_brancos);
+
+    printf("Digite o número de votos nulos: ");
+    scanf("%d", &votos_nulos);
+
+    printf("Digite o número de votos válidos: ");
+    scanf("%d", &votos_validos);
+
+    percentual_brancos = (votos_brancos / (float)total_eleitores) * 100;
+    percentual_nulos = (votos_nulos / (float)total_eleitores) * 100;
+    percentual_validos = (votos_validos / (float)total_eleitores) * 100;
+
+    printf("Percentual de votos brancos: %.2f%%\n", percentual_brancos);
+    printf("Percentual de votos nulos: %.2f%%\n", percentual_nulos);
+    printf("Percentual de votos válidos: %.2f%%\n", percentual_validos);
+
+    return 0;
+}
